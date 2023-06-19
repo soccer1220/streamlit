@@ -6,6 +6,7 @@ openai.api_key = st.secrets['api_key']
 st.write('# 형준 홈페이지')
 chart_data = [100, 150, 300, 600, 1400]
 st.bar_chart(chart_data)
+picture = None
 
 with st.form('name'):
     name_input = st.text_input('이름을 입력하세요')
