@@ -17,9 +17,10 @@ with st.form('name'):
             st.write('환영합니다 {}님!'.format(name_input))
             picture = st.camera_input("카메라로 얼굴 사진을 찍어주세요")
             if picture:
-                st.image(picture)
+                pass
         elif not name_input:
             st.markdown(":red[이름을 다시 입력해주세요!]")
         else:
             st.markdown(":red[생년월일을 다시 입력해주세요!]")
 
+st.image(picture)
